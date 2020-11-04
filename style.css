@@ -1,0 +1,88 @@
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Marker Felt";
+  text-align: center;
+  background-color: #EDDCD2;
+  color: #564424; 
+  margin: 0;
+  padding: 10px;
+  text-transform: uppercase;
+  display: block;
+}
+
+main {
+  color: #564424;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+}
+
+.intro {
+  background-color: #B4CFC6;
+}
+
+.about-me, .contact {
+  background-color: #EDDCD2;
+}
+
+.projects {
+  background-color: #cacac0;
+}
+
+img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+/* Mobile-First */
+
+.group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .item-double {
+    flex: 2;
+    margin: 10px;
+  }
+
+  .contact {
+    padding-bottom: 50px;
+  }
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: #7776BC;
+}
+
+a:hover {
+  color: tomato;
+}
+
+a:active {
+  color: cornflowerblue;
+}
+
+  /* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+    .wrapper {
+      width: 80%;
+      margin: auto;
+    }
+  
+    .group {
+      flex-direction: row;
+    }
+  }
