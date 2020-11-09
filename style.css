@@ -20,6 +20,16 @@ main {
   display: block;
 }
 
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px 0 0;
+}
+
 .contact-title {
   border-bottom: 1px solid lightgray;
   padding: 20px;
