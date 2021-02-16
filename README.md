@@ -1,4 +1,6 @@
-# taylor-responsive-portfolio
-Responsive Portfolio
+# Responsive Portfolio for my personal website
 
-Module 9 - Checkpoint 2
+- this was a project through Thinkful
+- utilizes HTML5 & CSS
+
+https://t-keazirian.github.io/taylor-responsive-portfolio/
