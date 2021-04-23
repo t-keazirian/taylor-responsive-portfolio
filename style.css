@@ -2,17 +2,39 @@
 	box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+}
+
 header {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bolder;
+  background-color: #563440;
+  color: #EE9480;
+}
+
+h1#header-h1 {
+  margin: 0;
+  padding-top: 10px;
+}
+
+nav, ul#menu {
+  margin: 0;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+div.name, nav {
+  background-color: #563440;
 }
 
 body {
 	font-family: 'Open Sans', sans-serif;
+  color: #37423D;
 }
 
-nav {
-	margin: 10px;
+main {
+  background-color: #ecf2e6;
 }
 
 div.name {
@@ -32,7 +54,7 @@ a {
 }
 
 div.intro-group,
-div.about-group, div.projects, div.contact-group {
+div.about-group, div.projects {
 	display: flex;
 	flex-direction: column;
 	margin-left: 20px;
@@ -79,6 +101,7 @@ li.contact {
 div.icons {
   display: flex;
   justify-content: center;
+  padding-top: 10px;
 }
 
 .fa-linkedin:before, .fa-github-square:before {
@@ -88,18 +111,105 @@ div.icons {
 p.p-footer {
   text-align: center;
   font-weight: bold;
+  padding-bottom: 20px;
+  margin-bottom: 0;
 }
 
 div.group-projects {
   margin-bottom: 20px;
+  /* background-color: #7688a0; */
+  background-color: #97B1A6;
+  color: #ecf2e6;
+}
+
+div.contact-group {
+  margin: 20px;
+}
+
+label {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+form#contactform {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+textarea {
+  width: 50%; 
+  width: 300px;
+  height: 100px;
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+input[type='text'], input[type='email'] {
+  width: 100%;
+}
+
+input[type='text'], input[type='email'], textarea {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+footer {
+  background-color: #563440;
+  color: #ecf2e6;
+  width: 100%;
+}
+
+footer#contact {
+  margin-top: 20px;
+}
+
+button[type='submit'] {
+  margin: 5px;
+	background-color: #EE9480;
+	color: #4a4a48;
+	cursor: pointer;
+	border-radius: 28px;
+	padding: 10px 20px;
+	font-weight: bolder;
+	border: none;
+	box-shadow: 3px 3px 3px #E7684B;
+}
+
+a.nav-link:link {
+  color: #EE9480;
+}
+
+a.nav-link:visited {
+  color: #EE9480;
+}
+
+a:link {
+  color: #563440;
+}
+
+a:visited {
+  color: #563440;
+}
+
+a:hover {
+  color: #EE9480;
+}
+
+.fa-linkedin:before, .fa-github-square:before {
+  color: #ecf2e6;
 }
 
 @media all and (min-width: 600px) {
 	header {
 		display: flex;
 		justify-content: space-between;
-		margin-left: 20px;
-		margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 	}
 
 	div.name {
@@ -119,6 +229,11 @@ div.group-projects {
 		flex-direction: row;
 		max-width: 800px;
 	}
+
+  div.contact-group {
+    display: flex;
+    flex-direction: column;
+  }
 
 	div.about-group, div.group-projects {
 		max-width: 800px;
@@ -150,4 +265,5 @@ div.group-projects {
 		align-items: center;
 		padding-top: 20px;
 	}
+
 }

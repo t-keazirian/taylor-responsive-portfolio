@@ -28,14 +28,14 @@
 	<body>
 		<header>
 			<div class="name">
-				<h1>Taylor Keazirian</h1>
+				<h1 id='header-h1'>Taylor Keazirian</h1>
 			</div>
 			<nav>
 				<ul id="menu">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#home" class='nav-link'>Home</a></li>
+					<li><a href="#about" class='nav-link'>About</a></li>
+					<li><a href="#portfolio" class='nav-link'>Portfolio</a></li>
+					<li><a href="#contact" class='nav-link'>Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -147,17 +147,18 @@
 								<li>PostgreSQL</li>
 							</ul>
 							<h4>
-								<a href="https://github.com/t-keazirian/live-with-intent"
+								<a href="https://github.com/t-keazirian/live-with-intent" target="_blank"
 									>repository</a
 								>
 								|
-								<a href="https://live-with-intent.vercel.app/dashboard"
-									>live app</a
-								>
-								|
-								<a href="https://github.com/t-keazirian/live-with-intent-api"
+								<a href="https://github.com/t-keazirian/live-with-intent-api" target="_blank"
 									>api repository</a
 								>
+								|
+								<a href="https://live-with-intent.vercel.app/dashboard" target="_blank"
+									>live app</a
+								>
+								
 							</h4>
 						</div>
 					</div>
@@ -186,11 +187,11 @@
 								<li>RESTful API Endpoints</li>
 							</ul>
 							<h4>
-								<a href="https://github.com/t-keazirian/national-parks-api"
+								<a href="https://github.com/t-keazirian/national-parks-api" target="_blank"
 									>repository</a
 								>
 								|
-								<a href="https://t-keazirian.github.io/national-parks-api/"
+								<a href="https://t-keazirian.github.io/national-parks-api/" target="_blank"
 									>live app</a
 								>
 							</h4>
@@ -217,11 +218,11 @@
 								<li>jQuery</li>
 							</ul>
 							<h4>
-								<a href="https://github.com/t-keazirian/horror-quiz-app"
+								<a href="https://github.com/t-keazirian/horror-quiz-app" target="_blank"
 									>repository</a
 								>
 								|
-								<a href="https://t-keazirian.github.io/horror-quiz-app/"
+								<a href="https://t-keazirian.github.io/horror-quiz-app/" target="_blank"
 									>live app</a
 								>
 							</h4>
@@ -230,11 +231,12 @@
 
 				</div>
 			</section>
-			<section class="contact" id="contact">
+			<section id="contact">
 				<div class="contact-group">
-					<h1>contact</h1>
-					<p>I would love to hear from you!</p>
-							<div>
+				<h1>contact</h1>
+				<p class='contact-p'>I would love to hear from you!</p>
+				<div class='contact-div'>
+							<div class='form'>
 								<form
 									id="contactform"
 									action="https://formspree.io/f/mbjpywwd"
@@ -265,12 +267,14 @@
 									<button type="submit">Submit</button>
 								</form>
 						</div>
+					</div>
 					</section>
 					<footer id="contact">
 						<div class="icons">
 							<a
 								href="https://www.linkedin.com/in/taylor-keazirian/"
 								target="_blank"
+								class='footer-link'
 								><i class="fab fa-linkedin fa-3x"></i
 							></a>
 
