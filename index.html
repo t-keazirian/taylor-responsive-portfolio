@@ -1,205 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Taylor Keazirian's Portfolio</title>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+		/>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<header>
+			<div class="name">
+				<h1>Taylor Keazirian</h1>
+			</div>
+			<nav>
+				<ul id="menu">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="intro" id="home">
+				<div class="intro-group">
+					<div class="item item-double">
+						<img
+							class="headshot"
+							src="images/IMG_6389.jpeg"
+							alt="Taylor Keazirian Picture"
+						/>
+					</div>
 
-<!--Head Below-->
+					<div class="item">
+						<h1 id="intro-h1">hi there!</h1>
+						<p>
+							Thank you for taking the time to visit my portfolio! I am an
+							aspiring developer completing the software engineering program at
+							<a href="https://www.thinkful.com/" target="_blank">Thinkful</a>.
+						</p>
+						<p>Here are the technologies I've learned through Thinkful:</p>
+						<ul>
+							<li>JavaScript ES6</li>
+							<li>React</li>
+							<li>Node.js</li>
+							<li>PostgreSQL</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>jQuery</li>
+						</ul>
+					</div>
+				</div>
+				<p id="after-intro">
+					I'm seeking opportunities where I can continue to develop my
+					programming skills. I'm self-sufficient and goal-oriented, with 10
+					years of experience in leadership, organization, and problem-solving.
+					I love collaborating with others on projects and working as a team. As
+					a life-long learner, I know this is only the beginning of a great
+					journey!
+				</p>
+			</section>
+			<section class="about-me" id="about">
+				<div class="about-group">
+					<div class="item">
+						<h1>about me</h1>
+						<p>
+							Originally from Glenview, IL, I moved to Nashville, TN to attend
+							college at Vanderbilt University. Although I double majored in
+							Child Development and Spanish, after graduation my immediate work
+							opportunity was in a restaurant. I fell in love with the
+							fast-paced, team-led environment. For the past 8+ years, my career
+							continued in hospitality. I worked my way up from server and
+							bartender to Assistant General Manager at our highest volume
+							establishment. While I loved my career in restaurant management, I
+							found myself yearning for more - a field where I could keep my
+							mind sharp, and a career that would challenge me in new, exciting
+							ways.
+						</p>
+						<p>
+							I grew up playing on computers, ultimately using computers for
+							both entertainment and education. My dad was involved in the early
+							tech industry, so I found myself exposed at a young age, which I
+							am very grateful for! As I pondered my options for future careers,
+							software engineering continually popped into my mind. I knew it
+							would be a life-changing, challenging opportunity, which it has
+							proven to be!
+						</p>
+						<h3>when I'm not coding...</h3>
+						<p>
+							you can find me practicing yoga, mindfulness, meditation, and
+							pursuing anything fitness related! I have taught yoga sculpt for
+							the past 5 years, and ran my first half marathon in 2020.
+						</p>
+					</div>
+					<div class="item item-double">
+						<img
+							class="yoga"
+							src="images/yoga-meditation.jpg"
+							alt="Yoga Meditation"
+						/>
+					</div>
+				</div>
+			</section>
+			<section id="portfolio">
+				<div class="projects">
+					<h1>projects:</h1>
+					<div class="group-projects">
+						<img
+							class="live-pic"
+							src="./images/LiveWithIntent.png"
+							alt="National Parks API Screenshot"
+						/>
+						<div class="item-project">
+							<h4>Live With Intent</h4>
+							<p>
+								I created Live With Intent as a goal tracking web app. I
+								designed both the front-end and the back-end, and RESTful APIs.
+								The user can create new goals, edit their current goals, and
+								keep track of their progress.
+							</p>
+							<p>Technologies used:</p>
+							<ul>
+								<li>React</li>
+								<li>JavaScript</li>
+								<li>CSS</li>
+								<li>Node.js</li>
+								<li>Express.js</li>
+								<li>PostgreSQL</li>
+							</ul>
+							<h4>
+								<a href="https://github.com/t-keazirian/live-with-intent"
+									>repository</a
+								>
+								|
+								<a href="https://live-with-intent.vercel.app/dashboard"
+									>live app</a
+								>
+								|
+								<a href="https://github.com/t-keazirian/live-with-intent-api"
+									>api repository</a
+								>
+							</h4>
+						</div>
+					</div>
+					<div class="group-projects">
+						<img
+							class="montana"
+							src="images/national-parks-screenshot.png"
+							alt="National Parks API Screenshot"
+						/>
+						<div class="item-project">
+							<h4>National Parks and Campgrounds Finder</h4>
+							<p>
+								This is a web app I created using multiple APIs. It searches the
+								National Parks API to find parks based in a state selected by
+								the user. When the list of parks are displayed, click on the
+								"show campgrounds" button. It will query the campgrounds
+								endpoint and display all the available campgrounds for that
+								park.
+							</p>
+							<p>Technologies used:</p>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JavaScript</li>
+								<li>jQuery</li>
+								<li>RESTful API Endpoints</li>
+							</ul>
+							<h4>
+								<a href="https://github.com/t-keazirian/national-parks-api"
+									>repository</a
+								>
+								|
+								<a href="https://t-keazirian.github.io/national-parks-api/"
+									>live app</a
+								>
+							</h4>
+						</div>
+					</div>
+					<div class="group-projects">
+						<img
+							class="horror-quiz"
+							src="images/horror-quiz-screenshot.png"
+							alt="Quiz App Picture"
+						/>
+						<div class="item-project">
+							<h4>Horror Movie Quiz App</h4>
+							<p>
+								This is a quiz app I created. It will test your knowledge of 10
+								horror movie questions. It responds dynamically, and will keep
+								track of your score throughout.
+							</p>
+							<p>Technologies used:</p>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JavaScript</li>
+								<li>jQuery</li>
+							</ul>
+							<h4>
+								<a href="https://github.com/t-keazirian/horror-quiz-app"
+									>repository</a
+								>
+								|
+								<a href="https://t-keazirian.github.io/horror-quiz-app/"
+									>live app</a
+								>
+							</h4>
+						</div>
+					</div>
 
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Taylor Keazirian's Portfolio </title>
-    <link 
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        rel="stylesheet"
-        type="text/css"
-    />
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-</head>
+				</div>
+			</section>
+			<section class="contact" id="contact">
+				<div class="contact-group">
+					<h1>contact</h1>
+					<p>I would love to hear from you!</p>
+							<div>
+								<form
+									id="contactform"
+									action="https://formspree.io/f/mbjpywwd"
+									method="POST"
+								>
+									<label for="name">Name:</label>
+									<input
+										id="name"
+										type="text"
+										name="name"
+										placeholder="Your name"
+									/>
 
-<!--Body Below-->
+									<label for="email">Email:</label>
+									<input
+										id="email"
+										type="email"
+										name="_replyto"
+										placeholder="Your email"
+									/>
 
-<body>
+									<label for="message">Your message:</label>
+									<textarea
+										id="message"
+										name="message"
+										placeholder="Your message"
+									></textarea>
+									<button type="submit">Submit</button>
+								</form>
+						</div>
+					</section>
+					<footer id="contact">
+						<div class="icons">
+							<a
+								href="https://www.linkedin.com/in/taylor-keazirian/"
+								target="_blank"
+								><i class="fab fa-linkedin fa-3x"></i
+							></a>
 
-<!--Header-->
-<header>
-    <h1>Taylor Keazirian</h1>
-    <h2>Software Developer in Training</h2>
-    <nav>
-        <ul id="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<!--Main-->
-<main>
-
-<!--Intro Section with picture-->
-
-    <section class="intro" id="home">
-        <div class="group">
-            <div class="item item-double">
-                <img src="images/IMG_6389.jpeg" alt="Taylor Keazirian Picture">
-            </div>
-
-        <div class="item">
-            <h3>Hi, I'm Taylor Keazirian!</h3>
-            <p>I'm from Chicago, IL.</p>
-            <p>I’m a student at <a href="https://www.thinkful.com/" target="_blank">Thinkful</a>
-                working my way through the software engineering flex program!
-            </p>
-            <p>Coding is both challenging, and fun! 
-                I've found it requires focus, determination, and grit.
-            </p>
-            <p>So far, I've learned the basics of:</p> 
-            <ul>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>jQuery</li>
-            </ul>
-            <p>I'm eager to develop my coding skills and become a full-time software
-                engineer!  I love collaborating with others on projects, and thrive in leadership
-                positions.  
-            </p>
-        </div>
-        </div>
-    </section>
-
-<!--About Me Section-->
-
-    <section class="about-me" id="about">
-        <div class="group">
-            <div class="item">
-                <h3>About Me</h3>
-                <p>My career for the past 10+ years has been in hospitality and restaurant management.  
-                    I thrive in a fast-paced, driven work environment, and loved working my way up from server all the way to Assistant General Manager.  
-                    My ability to be detail-oriented, goal-focused, and highly organized allowed me to excel in this field.  
-                    However, over the past year I found myself yearning for something more - a field where I could keep my mind sharp, 
-                    and a career that would challenge me in new, exciting ways.
-                </p>
-                <p>I grew up playing on computers, ultimately using computers for both entertainment and education.
-                    My dad was involved in the early tech industry, so I found myself exposed at a young age, which I am very grateful for!
-                    As I pondered my options for future careers, software engineering continually popped into my mind.  
-                    I knew it would be extremely challenging, but also rewarding.  
-                    I enrolled at Thinkful and never looked back!
-                </p>
-                <p>In my free time, I practice and teach yoga.  I find that meditation
-                    is the key to keeping calm during times of stress.
-                </p>
-            </div>
-            <div class="item item-double">
-                <img src="images/yoga-meditation.jpg" alt="Yoga Meditation">
-            </div>
-        </div>
-    </section>
-
-<!--Projects section - add more later-->
-
-    <section class="projects" id="portfolio">
-        <h3 class="item">Projects:</h3>
-        <div class="group">
-            <div class="item">
-                <img src="images/horror-quiz-screenshot.png" alt="Quiz App Picture">
-                <h4>Quiz App</h4>
-                <p>This is a quiz app I created.  It will test your knowledge of 10 horror movie questions.  It responds dynamically, and will keep track of your score throughout.</p>
-                <p>The skills used to create this project:</p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                </ul>
-                <p><a href="https://github.com/t-keazirian/horror-quiz-app">Quiz App GitHub Repo Link</a></p>
-                <p><a href="https://t-keazirian.github.io/horror-quiz-app/">Live Horror Movie Quiz Link</a></p>
-            </div>
-            <div class="item">
-                <img src="images/national-parks-screenshot.png" alt="National Parks API Screenshot">
-                <h4>National Parks and Campgrounds Finder</h4>
-                <p>This is an app I created using multiple APIs.  It searches the National Parks API to find parks based in a state selected by the user.  When the list of parks are displayed, click on the "show campgrounds" button.  It will query the campgrounds endpoint and display all the available campgrounds for that park.</p>
-                <p>The skills used to create this project:</p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>API Endpoints</li>
-                </ul>
-                <p><a href="https://github.com/t-keazirian/national-parks-api">API GitHub Repo Link</a></p>
-                <p><a href="https://t-keazirian.github.io/national-parks-api/">Live National Parks App Link</a></p>
-            </div>
-            <div class="item">
-                <img src="images/Coming-Soon.jpg" alt="Coming Soon">
-                <h4>Portfolio Placeholder Title</h4>
-                <p>This will feature another project when I have it completed!
-                </p>
-                <p>The skills used to create this project:</p>
-                <ul>
-                    <li>Skill 1</li>
-                    <li>Skill 2</li>
-                    <li>Skill 3</li>
-                </ul>
-                <p>Link to GitHub repo: <a href="#">Placeholder Link</a></p>
-                <p>Link to Live App: <a href="#">Placeholder Link</a></p>
-            </div>
-            <div class="item">
-                <img src="images/Coming-Soon.jpg" alt="Coming Soon">
-                <h4>Portfolio Placeholder Title</h4>
-                <p>This will feature another project when I have it completed!
-                </p>
-                <p>The skills used to create this project:</p>
-                <ul>
-                    <li>Skill 1</li>
-                    <li>Skill 2</li>
-                    <li>Skill 3</li>
-                </ul>
-                <p>Link to GitHub repo: <a href="#">Placeholder Link</a></p>
-                <p>Link to Live App: <a href="#">Placeholder Link</a></p>
-            </div>
-        </div>
-    </section>
-
-<!--Contact Me Section-->
-
-    <section class="contact" id="contact">
-        <div class="group">
-            <div class="item">
-                <h3>Contact Taylor</h3>
-                <p>Please feel free to reach out to me!</p>
-                <p>I love to hear other people's journey into the world of coding!</p>
-            </div>
-            <div class="item">
-                <h4>Reach me via:</h4>
-                <ol>
-                    <li><a href="mailto:taylork26@gmail.com">Email me!</a></li>
-                    <li><a href="https://www.linkedin.com/in/taylor-keazirian/" target="_blank">LinkedIn</a></li> 
-                    <li><a href="https://github.com/t-keazirian" target="_blank">GitHub</a></li>
-                </ol>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2 class="contact-title">Contact Form</h2>
-        <div class="group">
-            <div class="item">
-                <form id="contactform" action="https://formspree.io/f/mbjpywwd" method="POST">
-                    <label for="name">Name:</label>
-                    <input id="name" type="text" name="name" placeholder="Your name">
-
-                    <label for="email">Email:</label>
-                    <input id="email" type="email" name="_replyto" placeholder="Your email">
-
-                    <label for="message">Your message:</label>
-                    <textarea id="message" name="message" placeholder="Your message"></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </div>    
-    </section>
-</main>
-
-</body>
+							<a href="https://github.com/t-keazirian" target="_blank"
+								><i class="fab fa-github-square fa-3x"></i
+							></a>
+						</div>
+						<p class='p-footer'>Taylor Keazirian <i class="far fa-copyright"></i> 2021</p>
+					</footer>
+				</div>
+			</section>
+		</main>
+	</body>
 </html>

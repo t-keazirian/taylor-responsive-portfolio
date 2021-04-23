@@ -1,133 +1,153 @@
-
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 header {
-  font-family: "Marker Felt";
-  text-align: center;
-  background-color: #EDDCD2;
-  color: #564424; 
-  margin: 0;
-  padding: 10px;
-  text-transform: uppercase;
-  display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bolder;
 }
 
-main {
-  color: #564424;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: block;
+body {
+	font-family: 'Open Sans', sans-serif;
 }
 
-nav ul {
+nav {
+	margin: 10px;
+}
+
+div.name {
+	padding: 0;
+	text-align: center;
+}
+
+ul#menu {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+div.intro-group,
+div.about-group, div.projects, div.contact-group {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+div.group-projects {
   display: flex;
-  list-style: none;
+  flex-direction: column;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(3.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	margin-top: 10px;
+}
+
+img.headshot, img.yoga {
+	max-width: 335px;
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(3.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	margin-top: 10px;
+}
+
+img.yoga, img.live-pic, img.horror-quiz, img.montana {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 10px;
+}
+
+p#after-intro {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+li.contact {
+  list-style-type: none;
+}
+
+div.icons {
+  display: flex;
   justify-content: center;
 }
 
-nav ul li {
-  margin: 0 20px 0 0;
+.fa-linkedin:before, .fa-github-square:before {
+  padding: 10px;
 }
 
-.contact-title {
-  border-bottom: 1px solid lightgray;
-  padding: 20px;
-  margin: 0;
+p.p-footer {
+  text-align: center;
+  font-weight: bold;
 }
 
-form label {
-  display: flex;
-  margin-bottom: 5px;
+div.group-projects {
+  margin-bottom: 20px;
 }
 
-section {
-  background-color: #B4CFC6;
-}
+@media all and (min-width: 600px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 
-.intro {
-  background-color: #B4CFC6;
-}
+	div.name {
+		text-align: start;
+		padding-left: 10px;
+	}
 
-.about-me, .contact {
-  background-color: #EDDCD2;
-}
+	ul#menu {
+		padding-right: 10px;
+	}
 
-.projects {
-  background-color: #cacac0;
-}
+	li {
+		padding-left: 10px;
+	}
 
-img {
-  width: 100%;
-  border-radius: 10%;
-}
+	div.intro-group {
+		flex-direction: row;
+		max-width: 800px;
+	}
 
-/* Mobile-First */
+	div.about-group, div.group-projects {
+		max-width: 800px;
+	}
 
-.group {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .item {
-    flex: 1;
+	div.item, div.item-project {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+  div.group-projects {
+    flex-direction: row;
     padding: 20px;
-    margin: 0;
-  }
-  
-  .item-double {
-    flex: 2;
-    margin: 10px;
   }
 
-  .contact {
-    padding-bottom: 50px;
-  }
+	p#after-intro {
+		max-width: 800px;
+		margin-left: 25px;
+	}
 
-  form input, 
-  form textarea {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-  
-  form textarea {
-      height: 160px;
-  }
+	#intro-h1 {
+		margin: 0;
+	}
 
-a {
-  color: blue;
-  text-decoration: none;
+	section#home,
+	section#about, section#portfolio, section#contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 20px;
+	}
 }
-
-a:link {
-  color: blue;
-}
-
-a:visited {
-  color: #7776BC;
-}
-
-a:hover {
-  color: tomato;
-}
-
-a:active {
-  color: cornflowerblue;
-}
-
-  /* Groups & Items  (Desktop) */
-
-@media all and (min-width: 800px) {
-    .wrapper {
-      width: 80%;
-      margin: auto;
-    }
-  
-    .group {
-      flex-direction: row;
-    }
-
-    section {
-      padding: 0 10%;
-    }
-  }
