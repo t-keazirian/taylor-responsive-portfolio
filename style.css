@@ -8,18 +8,25 @@ body {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
 	color: #37423d;
 }
 
 header {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Kalam', cursive;
 	font-weight: bolder;
 	background-color: #563440;
 	color: #ee9480;
 }
 
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Kalam', cursive;
+}
+
 main {
+	font-family: 'Open Sans', sans-serif;
 	background-color: #ecf2e6;
 }
 
@@ -245,9 +252,8 @@ a.email:visited {
 }
 
 a.email:hover {
-	color: #16DB93;
+	color: #16db93;
 }
-
 
 .fa-linkedin:before,
 .fa-github-square:before {
