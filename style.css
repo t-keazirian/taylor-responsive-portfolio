@@ -2,39 +2,47 @@
 	box-sizing: border-box;
 }
 
-html, body {
-  width: 100%;
+html,
+body {
+	width: 100%;
 }
 
 header {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bolder;
-  background-color: #563440;
-  color: #EE9480;
+	background-color: #563440;
+	color: #ee9480;
+}
+
+p {
+	line-height: 1.5;
 }
 
 h1#header-h1 {
-  margin: 0;
+	margin: 0;
+	padding-top: 10px;
+}
+
+nav,
+ul#menu {
+	margin: 0;
+	padding-bottom: 20px;
   padding-top: 10px;
+	margin-top: 5px;
 }
 
-nav, ul#menu {
-  margin: 0;
-  padding-bottom: 20px;
-  margin-top: 10px;
-}
-
-div.name, nav {
-  background-color: #563440;
+div.name,
+nav {
+	background-color: #563440;
 }
 
 body {
 	font-family: 'Open Sans', sans-serif;
-  color: #37423D;
+	color: #37423d;
 }
 
 main {
-  background-color: #ecf2e6;
+	background-color: #ecf2e6;
 }
 
 div.name {
@@ -54,7 +62,8 @@ a {
 }
 
 div.intro-group,
-div.about-group, div.projects {
+div.about-group,
+div.projects {
 	display: flex;
 	flex-direction: column;
 	margin-left: 20px;
@@ -62,10 +71,10 @@ div.about-group, div.projects {
 }
 
 div.group-projects {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.25);
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.25);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(3.5px);
 	border-radius: 10px;
@@ -73,7 +82,8 @@ div.group-projects {
 	margin-top: 10px;
 }
 
-img.headshot, img.yoga {
+img.headshot,
+img.yoga {
 	max-width: 335px;
 	background: rgba(255, 255, 255, 0.25);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -83,10 +93,13 @@ img.headshot, img.yoga {
 	margin-top: 10px;
 }
 
-img.yoga, img.live-pic, img.horror-quiz, img.montana {
-  max-width: 300px;
-  max-height: 300px;
-  border-radius: 10px;
+img.yoga,
+img.live-pic,
+img.horror-quiz,
+img.montana {
+	max-width: 300px;
+	max-height: 300px;
+	border-radius: 10px;
 }
 
 p#after-intro {
@@ -95,121 +108,143 @@ p#after-intro {
 }
 
 li.contact {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 div.icons {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
 }
 
-.fa-linkedin:before, .fa-github-square:before {
-  padding: 10px;
+.fa-linkedin:before,
+.fa-github-square:before {
+	padding: 10px;
 }
 
 p.p-footer {
-  text-align: center;
-  font-weight: bold;
-  padding-bottom: 20px;
-  margin-bottom: 0;
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 20px;
+	margin-bottom: 0;
 }
 
 div.group-projects {
-  margin-bottom: 20px;
-  /* background-color: #7688a0; */
-  background-color: #97B1A6;
-  color: #ecf2e6;
+	margin-bottom: 20px;
+	/* background-color: #7688a0; */
+	background-color: #97b1a6;
+	color: #ecf2e6;
 }
 
 div.contact-group {
-  margin: 20px;
+	margin: 20px;
 }
 
 label {
-  padding-bottom: 10px;
-  font-weight: bold;
+	padding-bottom: 10px;
+	font-weight: bold;
 }
 
 input {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 form#contactform {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 textarea {
-  width: 50%; 
-  width: 300px;
-  height: 100px;
-  margin-bottom: 16px; 
-  resize: vertical 
+	width: 50%;
+	width: 300px;
+	height: 100px;
+	margin-bottom: 16px;
+	resize: vertical;
 }
 
-input[type='text'], input[type='email'] {
-  width: 100%;
+input[type='text'],
+input[type='email'] {
+	width: 100%;
 }
 
-input[type='text'], input[type='email'], textarea {
-  border-radius: 5px;
-  padding: 5px;
+input[type='text'],
+input[type='email'],
+textarea {
+	border-radius: 5px;
+	padding: 5px;
 }
 
 footer {
-  background-color: #563440;
-  color: #ecf2e6;
-  width: 100%;
+	background-color: #563440;
+	color: #ecf2e6;
+	width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 footer#contact {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 button[type='submit'] {
-  margin: 5px;
-	background-color: #EE9480;
-	color: #4a4a48;
+	margin: 5px;
+	background-color: #ee9480;
+	color: #ecf2e6;
 	cursor: pointer;
 	border-radius: 28px;
 	padding: 10px 20px;
 	font-weight: bolder;
 	border: none;
-	box-shadow: 3px 3px 3px #E7684B;
+	box-shadow: 3px 3px 3px #e7684b;
+}
+
+button:hover {
+	color: #4a4a48;
+	box-shadow: 5px 5px 5px #e7684b;
+}
+
+button:active {
+	background-color: #e7684b;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
 }
 
 a.nav-link:link {
-  color: #EE9480;
+	color: #ee9480;
 }
 
 a.nav-link:visited {
-  color: #EE9480;
+	color: #ee9480;
+}
+
+a.nav-link:hover {
+	color: #ecf2e6;
 }
 
 a:link {
-  color: #563440;
+	color: #563440;
 }
 
 a:visited {
-  color: #563440;
+	color: #563440;
 }
 
 a:hover {
-  color: #EE9480;
+	color: #ee9480;
 }
 
-.fa-linkedin:before, .fa-github-square:before {
-  color: #ecf2e6;
+.fa-linkedin:before,
+.fa-github-square:before {
+	color: #ecf2e6;
 }
 
 @media all and (min-width: 600px) {
 	header {
 		display: flex;
 		justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	div.name {
@@ -230,24 +265,26 @@ a:hover {
 		max-width: 800px;
 	}
 
-  div.contact-group {
-    display: flex;
-    flex-direction: column;
-  }
+	div.contact-group {
+		display: flex;
+		flex-direction: column;
+	}
 
-	div.about-group, div.group-projects {
+	div.about-group,
+	div.group-projects {
 		max-width: 800px;
 	}
 
-	div.item, div.item-project {
+	div.item,
+	div.item-project {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
 
-  div.group-projects {
-    flex-direction: row;
-    padding: 20px;
-  }
+	div.group-projects {
+		flex-direction: row;
+		padding: 20px;
+	}
 
 	p#after-intro {
 		max-width: 800px;
@@ -258,12 +295,22 @@ a:hover {
 		margin: 0;
 	}
 
+	textarea {
+		width: 500px;
+	}
+
+	footer {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
 	section#home,
-	section#about, section#portfolio, section#contact {
+	section#about,
+	section#portfolio,
+	section#contact {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding-top: 20px;
 	}
-
 }
