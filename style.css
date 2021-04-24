@@ -7,11 +7,20 @@ body {
 	width: 100%;
 }
 
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #37423d;
+}
+
 header {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bolder;
 	background-color: #563440;
 	color: #ee9480;
+}
+
+main {
+	background-color: #ecf2e6;
 }
 
 p {
@@ -27,22 +36,13 @@ nav,
 ul#menu {
 	margin: 0;
 	padding-bottom: 20px;
-  padding-top: 10px;
+	padding-top: 10px;
 	margin-top: 5px;
 }
 
 div.name,
 nav {
 	background-color: #563440;
-}
-
-body {
-	font-family: 'Open Sans', sans-serif;
-	color: #37423d;
-}
-
-main {
-	background-color: #ecf2e6;
 }
 
 div.name {
@@ -80,6 +80,10 @@ div.group-projects {
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	margin-top: 10px;
+	margin-bottom: 20px;
+	background-color: #97b1a6;
+	color: #37423d;
+	color: ;
 }
 
 img.headshot,
@@ -100,6 +104,8 @@ img.montana {
 	max-width: 300px;
 	max-height: 300px;
 	border-radius: 10px;
+	-webkit-box-shadow: 5px 7px 21px 4px rgba(41, 56, 40, 0.84);
+	box-shadow: 5px 7px 21px 4px rgba(41, 56, 40, 0.84);
 }
 
 p#after-intro {
@@ -127,13 +133,6 @@ p.p-footer {
 	font-weight: bold;
 	padding-bottom: 20px;
 	margin-bottom: 0;
-}
-
-div.group-projects {
-	margin-bottom: 20px;
-	/* background-color: #7688a0; */
-	background-color: #97b1a6;
-	color: #ecf2e6;
 }
 
 div.contact-group {
@@ -179,8 +178,8 @@ footer {
 	background-color: #563440;
 	color: #ecf2e6;
 	width: 100%;
-  padding-top: 20px;
-  padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
 
 footer#contact {
@@ -231,6 +230,10 @@ a:visited {
 }
 
 a:hover {
+	color: #ecf2e6;
+}
+
+a.thinkful:hover {
 	color: #ee9480;
 }
 
@@ -277,7 +280,7 @@ a:hover {
 
 	div.item,
 	div.item-project {
-		margin-left: 10px;
+		margin-left: 30px;
 		margin-right: 10px;
 	}
 
