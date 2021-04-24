@@ -236,6 +236,14 @@ a.thinkful:hover {
 	color: #ee9480;
 }
 
+a.email:link {
+	color: #e7684b;
+}
+
+a.email:hover {
+	color: #F1A66A;
+}
+
 .fa-linkedin:before,
 .fa-github-square:before {
 	color: #ecf2e6;
@@ -309,7 +317,7 @@ a.thinkful:hover {
 	section#home,
 	section#about,
 	section#portfolio,
-	section#contact {
+	section#contact-sect {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
