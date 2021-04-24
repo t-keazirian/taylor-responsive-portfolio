@@ -122,6 +122,10 @@ div.icons {
 	padding-top: 10px;
 }
 
+ul.hobbies {
+	list-style-type: none;
+}
+
 .fa-linkedin:before,
 .fa-github-square:before {
 	padding: 10px;
@@ -242,6 +246,10 @@ a.email:link {
 
 a.email:hover {
 	color: #F1A66A;
+}
+
+a.email:visited {
+	color: #e7684b;
 }
 
 .fa-linkedin:before,
